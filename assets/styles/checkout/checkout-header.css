@@ -1,0 +1,50 @@
+body{
+    background-color:  rgb(226, 226, 226);
+    font-family: 'Roboto';
+}
+
+.checkoutHeader{
+    height: 50px;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.imageContainer{
+    height: 30px;
+    display: flex;
+}
+
+.imageLogo{
+    height: 100%;
+    margin-right: 0;
+}
+
+.logoName{
+    height: 100%;
+}
+
+.middleContainer{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: gray;
+}
+
+.cartQuantityDesign{
+    color: rgb(107, 0, 0);
+    font-weight: bold;
+}
+
+@media only screen and (max-width:425px){
+    .logoName{
+        display: none;
+    }
+}

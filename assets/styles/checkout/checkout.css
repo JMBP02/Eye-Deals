@@ -1,0 +1,346 @@
+/*MAIN CONTENT DESIGN*/
+
+.main{
+    margin-top: 70px;
+    max-width: 1300px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yourOrderDesign{
+    font-size: 20px;
+}
+
+.checkoutContainer{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 5px;
+}
+
+.orderSummary{
+    background-color: transparent;
+    height: 270px;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 8px;
+
+    position: relative;
+}
+
+.paymentSummary{
+    background-color: transparent;
+    max-height: 300px;
+    border-radius: 8px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 20px;
+}
+
+.orderSummaryContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+@media only screen and (max-width:550px){
+    .checkoutContainer{
+        grid-template-columns: 1fr;
+    }
+    
+    .paymentSummary{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+}
+
+@media only screen and (min-width:1200px){
+
+}
+
+/*ORDER ITEM DESIGN*/
+.deliveryDate{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(107, 0, 0);
+}
+
+.orderDetails{
+    display: grid;
+    grid-template-columns: 230px 1fr 250px;
+    column-gap: 10px;
+    height: 150px;
+}
+
+.productOrderImage{
+    height: 100%;
+}
+
+.productOrderImageContainer{
+    border-radius: 4px;
+    height: 230px;
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.deleteContainer{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.deleteDesign{
+    height: 25px;
+}
+
+.deliveryOptionContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px; 
+}
+
+.dateChoiceContainer{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.radioDesign{
+    height: 20px;
+    border: 0;
+    width: 100%;
+    accent-color: rgb(107, 0, 0);
+}
+
+.shippingDateDesign{
+    color: rgb(107, 0, 0);
+    font-weight: bold;
+}
+
+.priceDesign{
+    color: rgb(107, 0, 0);
+    font-weight: bold;
+}
+
+.nameDesign{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*PAYMENT SUMMARY*/
+
+.itemsContainer, .shippingContainer, .beforeTaxContainer, .taxContainer, .totalContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.lineDesign{
+    width: 100px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.shortLineContainer{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5px;
+}
+
+.longLineContainer{
+    margin-bottom: 5px;
+}
+
+.longLineDesign{
+    width: 100%;
+    height: 30px;
+}
+
+.orderSummaryDesign{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(107, 0, 0);
+    margin-bottom: 10px;
+}
+
+.boldText{
+    font-weight: bold;
+}
+
+.boldTextTotal{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(107, 0, 0);
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.buttonDesign{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
+
+.buttonDesign:hover{
+    background-color: rgb(107, 0, 0);
+}
+
+.buttonDesign:active{
+    background-color: rgb(33, 33,33);
+}
+
+.quantity-input{
+    width: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.saveDesign{
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.saveDesign:hover{
+    background-color: rgb(107, 0, 0);
+    color: white;
+    border: 1px solid rgb(107, 0, 0);
+}
+
+.updateDesign{
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 1px solid  rgb(199, 199, 199);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.updateDesign:hover{
+    background-color: rgb(107, 0, 0);
+    color: white;
+    border: 1px solid rgb(107, 0, 0);
+}
+
+.updateContainer{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:550px){
+    
+    
+    .orderDetails{
+        grid-template-columns: 50px 1fr 150px;
+    }
+    
+    .productOrderImageContainer{
+        border-radius: 2px;
+        height: 50px;
+    }
+    .priceDesign{
+        font-weight: bold;
+        font-size: 10px;
+    }
+    
+    .nameDesign{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .quantityDesign{    
+        font-size: 10px;
+    }
+    .updateDesign{
+        font-size: 10px;
+        padding: 1px 5px;
+    }
+    .updateContainer{
+        margin-top: 0;
+    }
+    .saveDesign{
+        font-size: 10px;
+        padding: 1px 5px;
+        margin-left: 0;
+    }
+    .quantity-input{
+        width: 20px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .productDetails{
+        font-size: 10px;
+    }
+    .radioDesign{
+        
+        height: 10px;
+        border: 0;
+        width: 100%;
+        accent-color: rgb(107, 0, 0);
+    }
+    .shippingDateDesign, .shippingHandling, .shippingPrice{
+        font-size: 10px;
+    }
+    .deliveryDate{
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .deleteContainer{
+        top: 15px;
+        right: 15px;
+    }
+    .deleteDesign{
+        height: 20px;
+    }
+    .orderSummary{
+        min-width: 290px;
+        height: 200px;
+
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+}
+
+@media only screen and (min-width:1200px){
+
+}

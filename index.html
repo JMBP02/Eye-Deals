@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/pages/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="landingPageNavBar">
+      <div class="leftSection" onclick="sidebarToggle()">
+        <img
+          class="menuDesign"
+          src="assets/images/icon/menu-line-gray.png"
+          alt=""
+        />
+      </div>
+      <div class="middleSection">
+        <img src="assets/images/logo/EyeLogo.png" alt="" />
+        <img class="eyeLogoName" src="assets/images/logo/EyeName.png" alt="" />
+      </div>
+      <div class="rightSection">
+        <button class="logInDesign">LOG IN</button>
+      </div>
+    </nav>
+    <div class="sidebarMenu jsSidebarMenu">
+      <div class="hideSidebarContainer">
+        <img
+          class="imageSidebarDesign"
+          src="assets/images/logo/EyeLogo.png"
+          alt=""
+        />
+        <img
+          class="hideSidebar"
+          src="assets/images/icon/close-large-fill.png"
+          alt=""
+          onclick="sidebarClose()"
+        />
+      </div>
+      <div class="sidebarMenuButtonContainer">
+        <div
+          class="buttonContainer jsButton"
+          onclick="clickedButton('.jsButton')"
+        >
+          <img
+            class="imageIconsSidebarMenu"
+            src="assets/images/icon/home-2-line.png"
+            alt=""
+          />Home
+        </div>
+        <div
+          class="buttonContainer jsButton1"
+          onclick="clickedButton('.jsButton1')"
+        >
+          <img
+            class="imageIconsSidebarMenu"
+            src="assets/images/icon/fire-line.png"
+            alt=""
+          />Bestsellers
+        </div>
+        <div
+          class="buttonContainer jsButton2"
+          onclick="clickedButton('.jsButton2')"
+        >
+          <img
+            class="imageIconsSidebarMenu"
+            src="assets/images/icon/gift-line.png"
+            alt=""
+          />Special Offers
+        </div>
+        <div
+          class="buttonContainer jsButton3"
+          onclick="clickedButton('.jsButton3')"
+        >
+          <img
+            class="imageIconsSidebarMenu"
+            src="assets/images/icon/chat-1-line.png"
+            alt=""
+          />Comments
+        </div>
+        <div
+          class="buttonContainer jsButton4"
+          onclick="clickedButton('.jsButton4')"
+        >
+          <img
+            class="imageIconsSidebarMenu"
+            src="assets/images/icon/article-line.png"
+            alt=""
+          />About
+        </div>
+        <div
+          class="buttonContainer jsButton5"
+          onclick="clickedButton('.jsButton5')"
+        >
+          <img
+            class="imageIconsSidebarMenu"
+            src="assets/images/icon/phone-line.png"
+            alt=""
+          />Contact
+        </div>
+      </div>
+    </div>
+    <main class="mainContainer">
+      <div class="introductionContainer">
+        <div class="firstSection">
+          <img
+            class="blackMarketDesign"
+            src="assets/images/blackMarket.jpg"
+            alt=""
+          />
+          <div class="textContainer">
+            <div class="text">EyeDeals</div>
+            <div class="text1">
+              Where Power Is Bought, and Mercy Is Forgotten
+            </div>
+            <div class="text2">
+              In the shadow of thrones and the echo of battle cries, EyeDeals
+              offers the tools of conquest, not just to play history, but to
+              rewrite it. We trade in relics of bloodshed, dominion, and
+              submission.
+            </div>
+            <div>
+              <a href="EyeDeals.html"
+                ><button class="browseDesign">Browse</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="assets/scripts/index.js"></script>
+</html>
